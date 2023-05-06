@@ -1,5 +1,5 @@
 <a href="https://sharegpt.com">
-  <img alt="GPTclipboard – Share your best ChatGPT conversations with one click." src="">
+  <!-- img alt="GPTclipboard – Share your best ChatGPT conversations with one click." src="" -->
   <h1 align="center">GPTclipboard</h1>
 </a>
 
@@ -8,8 +8,6 @@
 </p>
 
 <br/>
-
-# GPTclipboard
 
 GPTclipboard is an open-source Chrome Extension that allows you to convert your ChatGPT conversations into Markdown format and copy them to your clipboard for easy sharing in chat applications like Slack.
 
