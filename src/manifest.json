@@ -1,6 +1,7 @@
 {
-  "name": "GPTclipboard: Share your best ChatGPT conversations with one click.",
-  "description": "GPTclipboard is an open-source Chrome Extension that allows you to copy your ChatGPT conversations and share them in chat applications like Slack.",
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDesc__",
+  "default_locale": "en",
   "version": "1.0.0",
   "manifest_version": 3,
   "icons": {

@@ -9,12 +9,10 @@ interface ConversationData {
   }[]
 }
 
-const turndown = (() => {
-  return (html: string | TurndownService.Node): string => {
-    const turndownService = new TurndownService()
-    return turndownService.turndown(html)
-  }
-})();
+function turndown(html: string | TurndownService.Node): string {
+  const turndownService = new TurndownService()
+  return turndownService.turndown(html)
+}
 
 function init() {
   const shareButton = createBtn()

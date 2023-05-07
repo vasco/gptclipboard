@@ -30,6 +30,7 @@ module.exports = (env, argv) => {
         patterns: [
           { from: 'src/manifest.json', to: '[name][ext]' },
           { from: 'src/assets', to: 'assets' },
+          { from: 'src/_locales', to: '_locales' },
         ],
       }),
     ],

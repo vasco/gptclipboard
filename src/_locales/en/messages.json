@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "GPTclipboard",
+    "description": "The description of the extension, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "GPTclipboard allows you to share your best ChatGPT conversations with one click in chat applications like Slack, Teams, etc.",
+    "description": "The description of the extension, displayed in the web store."
+  }
+}
