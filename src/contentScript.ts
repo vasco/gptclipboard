@@ -10,8 +10,10 @@ interface ConversationData {
 }
 
 const turndown = (() => {
-  const turndownService = new TurndownService()
-  return turndownService.turndown
+  return (html: string | TurndownService.Node): string => {
+    const turndownService = new TurndownService()
+    return turndownService.turndown(html)
+  }
 })();
 
 function init() {
@@ -29,7 +31,7 @@ function init() {
 
   setInterval(() => {
     const exportBtn = document.querySelector('#export-button')
-    if (exportBtn ?? (exportBtn as HTMLElement).style.display === 'none') {
+    if (exportBtn && (exportBtn as HTMLElement).style.display === 'none') {
       appendShareButton()
     }
   }, 500)
@@ -41,7 +43,7 @@ function init() {
     let model
 
     const chatGptPlusElement = document.querySelector('.gold-new-button')
-    const isNotChatGptPlus = chatGptPlusElement ?? (chatGptPlusElement as HTMLElement).innerText.includes('Upgrade')
+    const isNotChatGptPlus = chatGptPlusElement && (chatGptPlusElement as HTMLElement).innerText.includes('Upgrade')
 
     if (!isNotChatGptPlus) {
       const modelElement = threadContainer.firstChild as HTMLElement
